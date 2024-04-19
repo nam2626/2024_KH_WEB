@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이미지</title>
+  <style>
+    body{
+      height: 3000px;
+    }
+  </style>
 </head>
 <body>
   <!-- src : 이미지 경로, alt : 대체 텍스트 -->
@@ -16,6 +21,12 @@
   <img src="img/cocker.jpg" alt="대체 텍스트" width="300">
   <!-- .. 은 상위 폴더로 이동한다는 의미 -->
   <img src="../resource/img/cat.jpg" alt="고양이 이미지">
-
+  <!-- .은 현재 폴더를 의미-->
+  <img src="./img/cocker.jpg" alt="대체 텍스트">
+  <hr>
+  <!-- 절대 경로 : 현재 파일시스템의 ROOT 폴더 기준으로 접근하는 방법  -->
+  <!-- ROOT 폴더 : 파일 시스템의 최상위 계층에 위치한 폴더-->
+  <img src="/Step02/img/cocker.jpg" alt="대체 텍스트">
+  <img src="/resource/img/cat.jpg" alt="고양이 이미지">
 </body>
 </html>
