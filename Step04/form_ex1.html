@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼 태그</title>
+</head>
+<body>
+  <!-- 
+    form 태그 : 사용자가 입력한 데이터들을 서버로 전송해주는 태그
+      action : 데이터를 전송할 서버페이지 경로
+      method : 데이터 전송 방식
+        get : url에 데이터를 포함해서 전송
+        post : http/https 메세지의 body에 포함해서 데이터를 전송
+
+    input 태그 : 사용자로부터 데이터를 직접적으로 입력 받는 태그
+                 입력받는 형식을 type 속성으로 결정
+    name 속성 : 서버로 데이터를 보낼때, 해당 데이터가 
+              어떤 데이터인지 알려주는 속성, 
+              속성 값으로 어떤 데이터인지 서버 프로그램에서 구분함
+   -->
+  <form action="" method="get">
+    <input type="text" name="id"><br>
+    <input type="password" name="passwd"> 
+    <button>로그인</button>
+  </form>
+</body>
+</html>
