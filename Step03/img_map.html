@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 맵</title>
+</head>
+<body>
+  <!--
+    이미지 맵 
+      이미지 일부분에 하이퍼링크를 설정하는 기능 
+  -->
+  <img src="img/image.png" usemap="#img_map">
+  <map name="img_map">
+    <!-- 
+      shape 도형종류, coords 좌표값, href 링크 주소, alt 대체 텍스트
+    -->
+    <!-- 사각형, 좌상단, 우하단 좌표값 -->
+    <area shape="rect" coords="42,68,534,377" href="https://www.naver.com" target="_blank">
+    <!-- 원 : 중심좌표 x, 중심좌표 y, 반지름 -->
+    <area shape="circle" coords="1057,228,136" href="https://www.google.com" target="_blankd">
+
+  </map>
+</body>
+</html>
