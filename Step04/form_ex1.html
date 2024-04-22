@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>폼 태그</title>
+  <style>
+    body{
+      height: 3000px;
+    }
+  </style>
 </head>
 <body>
   <!-- 
@@ -52,9 +57,14 @@
     <hr>
     <!-- 
       textarea
-
+        input 태그의 텍스트 상자에서 쓰던 내용을 두줄이상 쓸수 있게끔 하는 태그, 속성들도 전부 사용이 가능.
+        cols : 줄당 글자개수(가로길이), rows : 행 개수(세로 길이)
+        입력창 크기 조정을 할 수 있지만 요즘은 css로 width, height로 조정
      -->
-     <textarea name="" cols="30" rows="10"></textarea>
+     <textarea name="" cols="30" rows="10" placeholder="댓글입력"></textarea>
+     <textarea name="" cols="30" rows="10" placeholder="댓글입력">
+안녕하세요
+저는 홍길동입니다.</textarea>
   </form>
   <input type="text" value="초기값">
 </body>
