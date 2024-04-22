@@ -20,8 +20,14 @@
               속성 값으로 어떤 데이터인지 서버 프로그램에서 구분함
    -->
   <form action="" method="get">
-    <input type="text" name="id"><br>
-    <input type="password" name="passwd"> 
+    <!-- 
+      autofocus : 페이지가 로딩되면 자동으로 포커스가 해당 input 태그로 이동
+      placeholder : 입력할 내용의 힌트, 입력하면 힌트는 사라짐
+      required : 반드시 입력해야 하는 필수 입력 항목
+      maxlength : 입력할 수 있는 최대 글자 수
+     -->
+    <input type="text" name="id" placeholder="아이디 입력" maxlength="15" autofocus><br>
+    <input type="password" name="passwd" placeholder="암호 입력" required> 
     <button>로그인</button>
   </form>
 </body>
