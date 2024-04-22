@@ -4,8 +4,86 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>게시판 글쓰기</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      border: none;
+    }
+
+    td {
+      padding: 10px;
+      font-size: 18px;
+      /* border:1px solid black; */
+      border: none;
+    }
+
+    input {
+      width: 300px;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      height: 300px;
+      box-sizing: border-box;
+      resize: none;
+    }
+
+    button {
+      width: 150px;
+      padding: 10px 0px;
+    }
+
+    button:first-child {
+      float: left;
+    }
+
+    button:last-child {
+      float: right;
+    }
+  </style>
 </head>
 <body>
-  
+  <h1>게시판 글쓰기 페이지</h1>
+  <table border="1">
+    <tr>
+      <td>제목</td>
+      <td><input type="text" placeholder="제목을 입력해 주세요"></td>
+    </tr>
+    <tr>
+      <td>작성자</td>
+      <td><input type="text" placeholder="작성자를 입력해 주세요"></td>
+    </tr>
+    <tr>
+      <td colspan="2">내용</td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <textarea placeholder="내용을 입력하세요"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><hr></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button>글쓰기</button>
+        <button type="button">취소</button>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
