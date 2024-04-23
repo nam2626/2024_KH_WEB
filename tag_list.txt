@@ -32,7 +32,12 @@ button 버튼 태그
     reset : 입력한 내용 초기화
 textarea 텍스트 여러줄로 받는 태그
 
+태그 종류
+  block : 영역을 잡는 태그
+    h1,h2,h3,h4,h5,h6,p,blockquote,table,ol,ul...
 
+  inline : 글자로 취급하는 태그
+    img, a, b, strong, i, em, u, ins, mark...
 
 
 
