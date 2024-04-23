@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼</title>
+</head>
+<body>
+  <form action="" method="get">
+    <!-- 
+      체크 박스, 라디오 버튼
+        그룹화 : name 속성 값이 같으면 같은 데이터 항목으로 인식
+                라디오버튼의 경우 name 속성 값이 다르면 다른 종류의 값으로 인식하기 떄문에 예, 아니오가 둘다 클릭됨
+        checked 속성 : 체크박스, 라디오 버튼을 미리 체크
+
+     -->
+     <input type="checkbox" name="hobby" id="chk1" value="game" checked>
+     <label for="chk1">게임</label>
+     <input type="checkbox" name="hobby" id="chk2" value="fishing">
+     <label for="chk2">낚시</label>
+     <input type="checkbox" name="hobby" id="chk3" value="mount">
+     <label for="chk3">등산</label>
+     <br>
+     <input type="radio" name="agree" id="agree1" value="y" checked>
+     <label for="agree1">예</label>
+     <input type="radio" name="agree" id="agree2" value="n">
+     <label for="agree2">아니오</label>
+     <br>
+     <!-- <select name="tel">
+      <option value="A">010</option>
+      <option value="B">011</option>
+      <option value="C">016</option>
+      <option value="D">017</option>
+      <option value="F">019</option>
+     </select> -->
+     <select name="tel">
+      <option>010</option>
+      <option>011</option>
+      <option>016</option>
+      <option selected>017</option>
+      <option>019</option>
+     </select>
+     <br>
+     <input type="file">
+     <br>
+     <input type="date" name="date">
+     <br>
+     <input type="time" name="time">
+     <br>
+     <input type="datetime-local" name="datetime">
+     <br>
+     <input type="color" name="color">
+     <br>
+     <input type="range" name="range" max="100" min="0" value="50" step="10">
+     <br>
+     <button>전송</button>
+  </form>
+</body>
+</html>
