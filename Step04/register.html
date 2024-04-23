@@ -4,6 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>회원가입</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 0 auto;
+      border: none;
+    }
+    td {
+      padding: 10px;
+      font-size: 18px;
+      border: none;
+    }
+    input {
+      width: 300px;
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      height: 300px;
+      box-sizing: border-box;
+      resize: none;
+    }
+    button {
+      width: 150px;
+      padding: 10px 0px;
+    }
+    select {
+      font-size: 18px;
+      padding: 5px 10px;
+    }
+    input[name*="tel"] {
+      width: 100px;
+      text-align: center;
+    }
+    input[type="checkbox"],
+    input[type="radio"] {
+      width: 16px;
+      margin-left: 20px;
+    }
+  </style>
 </head>
 <body>
   <h1>회원가입 페이지</h1>
@@ -36,6 +85,35 @@
         </select>
         <input type="text" maxlength="4" minlength="4">
         <input type="text" maxlength="4" minlength="4">
+      </td>
+    </tr>
+    <tr>
+      <td>이메일</td>
+      <td>
+        <input type="text">@
+        <select>
+          <option>naver.com</option>
+          <option>hanmail.net</option>
+          <option>gmail.com</option>
+          <option>nate.com</option>
+          <option>직접입력</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>약관 동의</td>
+      <td>
+        <input type="radio" name="agree" id="agree1" value="y">
+        <label for="agree1">동의</label>
+        <input type="radio" name="agree" id="agree2" value="x">
+        <label for="agree2">동의 안함</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <button type="submit">회원가입</button>
+        <button type="reset">초기화</button>
+        <button type="button">취소</button>
       </td>
     </tr>
   </table>
