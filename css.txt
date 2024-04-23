@@ -1,0 +1,7 @@
+CSS(Cascading Style Sheet)
+    html문서에서 디자인 부분을 담당한다.
+
+    선택자(selector) : 디자인을 적용할 태그를 선택하는 방법
+      직접선택자
+      
+      간접선택자
