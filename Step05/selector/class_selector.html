@@ -20,6 +20,34 @@
         .red{
             color:red;
         }
+        /* 아이디 속성값이 blue인 선택자에 글자색상을 파란색으로 설정 */
+        #blue{
+            color:blue;
+        }
+        /* 클래스 under : 밑줄, 밑줄 색상을 파란색으로 설정*/
+        .under{
+            text-decoration: underline blue;
+        }
+
+        /* 그룹 선택자
+            선택자가 달라도 디자인 요소는 같은 경우
+
+            선택자, 선택자, ....{
+                css 속성명 : 속성값;
+                css 속성명 : 속성값;
+                css 속성명 : 속성값;
+                ...
+            }
+
+        */
+        td,th{
+            padding:5px;
+            border:1px solid black;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
     </style>
 </head>
 <body>
