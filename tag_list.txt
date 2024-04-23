@@ -22,3 +22,17 @@
 테이블 본문영역 - <tbody>
 테이블 꼬리말영역 - <tfoot>
 <caption></caption> 표 제목, 자동으로 가운데 정렬
+폼태그 <form></form>
+input 태그 <input type="text"> type에 따라 입력받는 형태가 달라짐
+    text, password
+button 버튼 태그
+  type 속성값
+    submit : 사용자가 input 태그에 입력한 내용을 서버로 전송하는 버튼
+    button : 아무런 기능이 없는 버튼
+    reset : 입력한 내용 초기화
+textarea 텍스트 여러줄로 받는 태그
+
+
+
+
+

@@ -3,9 +3,130 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>펜션 상세정보</title>
+  <style>
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    line-height: 1.6; 
+    padding: 20px; 
+    background: #f4f4f4; 
+  }
+
+  h2 {
+    color: #333; 
+    margin-bottom: 20px; 
+    font-size: 2rem;
+  }
+
+  img {
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 10px; 
+  }
+
+  figcaption {
+    font-size: 0.9rem; 
+    color: #666; 
+    text-align: center; 
+    margin-bottom: 20px; 
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px; 
+  }
+  thead > td{
+    height: 100px;
+  }
+  td {
+    padding: 8px; 
+    border: 1px solid #ddd;
+    background: #ffffff; 
+  }
+  td:first-child{
+    width: 80%;
+  }
+  td:last-child{
+    width: 20%;
+  }
+
+  textarea {
+    width: 100%; 
+    height: 100px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    margin-top: 10px; 
+  }
+
+  button {
+    width: 100%;
+    height: 100px;
+    background: #5cb85c; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    cursor: pointer; 
+    font-size: 1rem; 
+    display: inline-block;
+  }
+
+  button:hover {
+    background: #4cae4c; 
+  }
+  figure{
+    white-space: nowrap;
+    text-overflow: clip;
+    overflow: scroll;
+  }
+  figure > img{
+    width: 400px;
+  }
+  </style>
 </head>
 <body>
-  
+  <h2>OO 펜션 상세 정보</h2>
+  <p>
+    <img src="img/house_view_1.jpg" alt="">
+  </p>
+  <figure>
+    <figcaption>펜션 전경</figcaption>
+    <img src="img/house_view_1.jpg" alt="">
+    <img src="img/house_view_2.jpg" alt="">
+    <img src="img/house_view_3.jpg" alt="">
+    <img src="img/house_view_4.jpg" alt="">
+    <img src="img/house_view_5.jpg" alt="">
+  </figure>
+  <table>
+    <thead>
+      <tr>
+        <td><textarea></textarea></td>
+        <td><button>댓글 등록</button></td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">댓글 내용....</td>
+      </tr>
+      <tr>
+        <td colspan="2">댓글 내용....</td>
+      </tr>
+      <tr>
+        <td colspan="2">댓글 내용....</td>
+      </tr>
+      <tr>
+        <td colspan="2">댓글 내용....</td>
+      </tr>
+      <tr>
+        <td colspan="2">댓글 내용....</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>
