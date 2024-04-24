@@ -2,11 +2,41 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>테두리</title>
     <style>
-      
+      div{
+        width: 200px;
+        height: 200px;
+      }
+      /* 
+        상하좌우 동일한 테두리 적용시
+        border : 선두께 선종류 색상;
+        선종류 : solid dashed dotted double inset outset
+      */
+      .border1{
+        border: 20px solid coral;
+        /* border-width: 20px;
+        border-style: solid;
+        border-color: coral; */
+      }
+      /* 테두리 왼쪽에만 넣고, 두께는 10px, 선종류는 점선,선 색상 파랑 */
+      .border2{
+        border-left: 10px dotted blue;
+        /* border-left-width: 10px;
+        border-left-style: dotted;
+        border-left-color: blue; */
+      }
+
+      /* .border1{
+        border: none;
+      } */
+
+      /* 선두께 5px, 선종류 직선, 색상 yellowgreen */
+      .border3{
+        
+      }
+
     </style>
 </head>
 <body>
