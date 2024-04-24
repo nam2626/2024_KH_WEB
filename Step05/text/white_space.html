@@ -2,11 +2,21 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>공백 처리</title>
     <style>
-        
+        /* 
+            pre-line : 연속 공백 X, 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 O
+            pre : 연속 공백 O , 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 X
+            pre-wrap : 연속 공백 O, 엔터와 <br>로 줄바꿈, 가로 길이에 따라 줄바꿈 O
+            break-spaces: pre-wrap과 동일하지만, 연속 공백이 줄 끝이상이 되면 줄바꿈
+            nowrap : 연속 공백 X , 엔터로 줄바꿈 X, <br>로 줄바꿈, 줄끝 이상되면 줄바꿈 X
+        */
+        p{
+            width: 300px;
+            border: 1px solid black;
+            white-space: nowrap;
+        }       
         
     </style>
 </head>
