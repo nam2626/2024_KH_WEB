@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글꼴 스타일</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
         /* 
             색상
                 R G B --> 2자리씩 16진수로 차지함
@@ -25,6 +26,23 @@
       */
       a{
         text-decoration: line-through wavy;
+      }
+      /* 클래스 속성값이 line에 선두께가 3px, 대시선의 밑줄로 선 색깔은 회색으로 지정 */
+      .line{
+        text-decoration: 3px dashed underline #cbcbcb;
+      }
+      /* 글꼴을 두껍게 */
+      .bold{
+        font-weight: bold;
+      }
+      /* 기울임꼴 */
+      .italic{
+        font-style: italic;
+      }
+      /* 폰트 변경 */
+      .font{
+        /* font-family: '궁서5', '바탕'; */
+        font-family: "Dongle", sans-serif;
       }
     </style>
 </head>
