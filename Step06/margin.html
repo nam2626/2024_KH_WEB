@@ -2,11 +2,43 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>margin</title>
     <style>
-       
+       *{
+          margin:0;
+          padding:0;
+        }    
+        div{
+          width: 200px;
+          height: 200px;
+          border: 1px solid black;
+        }
+        /* margin을 넣는 방법은 padding과 동일 */
+        /* 상하좌우 동일하게 바깥 여백 지정 */
+        .box1{
+            margin:40px;
+        }
+        /* 상하 좌우 */
+        .box2{
+            margin: 30px 60px;
+        }
+        /* 상 좌우 하 */
+        .box3{
+            margin : 10px 20px 30px;
+        }
+        /* 상 우 하 좌 --> 시계방향 */
+        .box4{
+            margin:10px 20px 30px 40px;
+            /* margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px; */
+        }
+        /* block 태그 가운데 배치 방법 */
+        .box5{
+            margin : 0 auto;
+        }
     </style>
 </head>
 <body>
