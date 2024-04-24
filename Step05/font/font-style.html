@@ -2,12 +2,30 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>글꼴 스타일</title>
-    
     <style>
-      
+        /* 
+            색상
+                R G B --> 2자리씩 16진수로 차지함
+                html색상표 --> #FF00AA
+
+                색상 이름이 있으면 색상 이름 --> red, blue, green
+
+                rgb(0~255,0~255,0~255)
+        */
+      .color{
+        color: #ff0000;
+      }
+      /* 
+        text-decoration : 선두께 선위치 선종류 선색깔;
+        선 종류 : solid(실선), dotted(점선), dashed(대시선), double(이중선), wavy(물결선)
+        선위치 : underline(밑줄), overline(윗줄), line-throgh(취소선), none
+        선두께 : px 단위로 지정
+      */
+      a{
+        text-decoration: line-through wavy;
+      }
     </style>
 </head>
 <body>
