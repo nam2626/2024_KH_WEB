@@ -2,11 +2,36 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>position</title>
     <style>
-      
+        body{
+            height: 3000px;
+        }
+        .container{
+            width: 1200px;
+            height: 600px;
+            margin:0 auto;
+            border : 1px solid black;
+            position: relative;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            top: 100px;
+            left: 100px;
+        }
+        .absolute{
+            /* 부모 요소도 abosulte, relative로 적용 */
+            position: absolute;
+        }
+        .fixed{
+            position: fixed;
+        }
+        .relative{
+            position: relative;
+        }
     </style>
 </head>
 <body>
