@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    
+        .container{
+            border: 5px solid black;
+            width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .box{
+            width: 150px;
+            height: 150px;
+            border:1px solid green;
+            float: left;
+        }
+        .sub_container{
+            border:5px solid red;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
     <h2>float 사용시 container의 세로 길이 설정</h2>    
     <div class="container">
-            <div class="sub_container">
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-                <div class="box"></div>
-            </div>
+        <div class="sub_container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
     </div>
     <p>내용 부분</p>
 </body>
