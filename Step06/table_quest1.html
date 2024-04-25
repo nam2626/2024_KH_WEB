@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>테이블</title>
+  <style>
+    table{
+      border-collapse: collapse;
+      width: 800px;
+      table-layout: fixed;
+    }
+    thead{
+      background-color: #add8e6;
+    }
+    .title{
+      width: 300px;
+    }
+    .date{
+      width: 150px;
+    }
+    th,td{
+      padding: 5px 0px;
+      text-align: center;
+      border-top: 1px solid #808080;
+      border-bottom: 1px solid #808080;
+      /* border: 1px solid #808080;
+      border-left: none;
+      border-right: none; */
+    }
+  </style>
+</head>
+<body>
+    <table>
+      <thead>
+        <tr >
+          <th>글번호</th>
+          <th class="title">제목</th>
+          <th>작성자</th>
+          <th class="date">작성일</th>
+          <th>조회수</th>
+          <th>좋아요</th>
+          <th>싫어요</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>4</td>
+          <td>오늘 수업 내용은?</td>
+          <td>김철수</td>
+          <td>2020-12-01</td>
+          <td>20</td>
+          <td>11</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>어제 오다가 사고 광경 목격함</td>
+          <td>이진희</td>
+          <td>2020-11-30</td>
+          <td>44</td>
+          <td>114</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>내일 스터디할 그룹 모집</td>
+          <td>홍길동</td>
+          <td>2020-11-31</td>
+          <td>44</td>
+          <td>14</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>1등</td>
+          <td>정구기</td>
+          <td>2020-11-29</td>
+          <td>44</td>
+          <td>14</td>
+          <td>500</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
