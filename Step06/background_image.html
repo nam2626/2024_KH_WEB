@@ -3,9 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>배경 이미지</title>
   <style>
-   
+    /* div에 가로 1000px, 세로 700px, 테두리 20px, 선종류는 dashed,
+       테두리 색상은 자유, padding  50px */
+      div{
+        width: 1000px;
+        height: 700px;
+        border:20px dashed black;
+        padding: 50px;
+        background-image: url('/resource/img/cat.jpg');
+        /* 
+          no-repeat : 반복을 안함
+          repeat-x : 가로방향 반복
+          repeat-y : 세로방향 반복
+          repeat : 가로세로 반복
+        */
+        background-repeat: no-repeat;
+        /*
+          배경이미지 위치 잡을때 px, % 단위로 좌표 설정
+          키워드를 이용해서 top center bottom right left
+        */
+        background-position: center;
+        /*
+          배경이미지 사이즈 가로 세로 픽셀, % 로 줄수 있음
+          cover : 가로세로 비율중 작은것을 기준으로 꽉 채움
+                  벗어난 이미지는 자름
+          contain : 가로세로 비율중 큰것을 기준으로 꽉 채움
+                  이미지가 잘리지는 않지만 꽉 채우지는 못함
+        */
+        background-size: contain;
+      }
   </style>
 </head>
 <body>
