@@ -5,7 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display</title>
     <style>
-      
+        ul{
+            width: 1200px;
+            margin:0 auto;
+            border:1px solid red;
+            list-style-type: none;
+            padding: 0px;
+        }
+        /* 
+        display
+            해당 태그의 요소를 변환
+            - block : 블록요소로 변환
+            - inline : 인라인요소로 변환
+            - inline-block : 인라인 요소와 블록요소의 특성 동시에 가짐, 글자 처럼 취급, 영역 크기도 잡을 수 있음, margin으로 가운데 정렬 X
+        */
+        li{
+            width: 240px;
+            text-align: center;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
@@ -17,8 +37,8 @@
         <li><a href="#">항목5</a></li>
     </ul>
     <hr>
-    <img src="../Step06/img/autumn.jpg" class="img">
-    <img src="../Step06/img/autumn.jpg">
+    <img src="/resource/img/cat.jpg" class="img">
+    <img src="/resource/img/cat.jpg">
 
 
 </body>
