@@ -6,7 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    
+        div{
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            border:20px dashed black;
+            background-color: orange;
+            /* 
+              background-clip은 배경을 채우는 영역을 지정
+              border-box : border까지 채움 (배경이미지는 제외)
+              padding-box : padding까지 채움
+              content-box : content까지 채움
+            */
+            background-clip: padding-box;
+        }
+        
     </style>
 </head>
 <body>
