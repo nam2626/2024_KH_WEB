@@ -4,6 +4,87 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>레이아웃 예제</title>
+  <style>
+    * {
+      margin:0;
+      padding: 0;
+    }
+    body{
+      height: 3000px;
+    }
+    header{
+      width: 1200px;
+      height: 200px;
+      margin:0 auto;
+      border:1px solid black;
+    }
+    nav{
+      width: 1200px;
+      margin:0 auto;
+      border:1px solid black;
+    }
+    nav > ul {
+      list-style-type: none;
+      text-align: center;
+    }
+    nav > ul > li {
+      width: 200px;
+      display: inline-block;
+      padding:20px 0px;
+    }
+    .container{
+      width: 1200px;
+      margin:0 auto;
+    }
+    main{
+      width: 900px;
+      float: left;
+    }
+    section{
+      border:1px solid black;
+      height: 300px;
+      width: 100%;
+      float: left;
+      box-sizing: border-box;
+    }
+    article{
+      float: left;
+      width: 300px;
+      height: 200px;
+      border:1px solid black;
+      box-sizing: border-box;
+    }
+    aside{
+      float:left;
+      border:1px solid black;
+      width: 300px;
+      height: 900px;
+      box-sizing: border-box;
+    }
+    footer{
+      width: 1200px;
+      border:1px solid black;
+      margin:0 auto;
+      clear: both;
+      padding:10px 0px;
+    }
+    .footer_container{
+      width: 100%;
+      display: inline-block;
+    }
+    .logo{
+      width: 200px;
+      height: 150px;
+      border:1px solid black;
+      float: left;
+    }
+    .company_info{
+      width: 200px;
+      height: 150px;
+      border:1px solid black;
+      float:right;
+    }
+  </style>
 </head>
 <body>
   <header>
