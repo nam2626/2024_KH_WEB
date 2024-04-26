@@ -22,6 +22,28 @@
             background-color: darkblue;
             color:white;
        }
+       .flex_row{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 500px;
+       }
+       .align1{
+        /* 교차축 기준으로 시작점에 배치 */
+        align-items: flex-start;
+       }
+       .align2{
+        /* 교차축 기준으로 끝점에 배치 */
+        align-items: flex-end;
+       }
+       .align3{
+        /* 교차축 기준으로 중앙에 배치 */
+        align-items: center;
+       }
+       .align4{            
+        /* 항목을 늘려서 교차축에 가득차게 배치 */
+        align-items: stretch;
+       }
     </style>
 </head>
 <body>
