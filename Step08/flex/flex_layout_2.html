@@ -1,15 +1,152 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flex</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이아웃 예제</title>
+  <style>
+    * {
+      margin:0;
+      padding: 0;
+    }
+    body{
+      height: 3000px;
+    }
+    .flex_container{
+        width: 1200px;
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 0 auto;
+    }
+    header{
+      height: 200px;
+      border:1px solid black;
+    }
+    nav{
+        border:1px solid black;
+    }
+    nav > ul {
+      list-style-type: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+    }
+    nav > ul > li {
+      width: 200px;
+      padding:20px 0px;
+      text-align: center;
+    }
+    .container{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    main{
+      width: 900px;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    section{
+      border:1px solid black;
+      height: 300px;
+      width: 100%;
+    }
+    article{
+      width: 300px;
+      height: 200px;
+      border:1px solid black;
+      box-sizing: border-box;
+    }
+    aside{
+      border:1px solid black;
+      width: 300px;
+      height: 900px;
+      box-sizing: border-box;
+    }
+    footer{
+      border:1px solid black;
+      padding:10px 0px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+    }
     
+    .logo{
+      width: 200px;
+      height: 150px;
+      border:1px solid black;
+    }
+    .company_info{
+      width: 200px;
+      height: 150px;
+      border:1px solid black;
+    }
+  </style>
 </head>
-
 <body>
-   
-</body>
+    <div class="flex_container">
 
+  <header>
+    <h1>Header 제목 영역</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">menu1</a></li>
+      <li><a href="#">menu2</a></li>
+      <li><a href="#">menu3</a></li>
+      <li><a href="#">menu4</a></li>
+      <li><a href="#">menu5</a></li>
+    </ul>
+  </nav>
+  <div class="container">
+    <main>
+      <section>
+        <h2>Section 제목영역</h2>
+      </section>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+      <article>
+        <h2>article 제목영역</h2>
+        <p>aritcle 내용 영역</p>
+      </article>
+    </main>
+    <aside>
+      <h2>Aside 제목영역</h2>
+    </aside>
+  </div>
+  <footer>
+      <div class="logo">로고</div>
+      <div class="company_info">회사정보</div>
+  </footer>
+</div>
+</body>
 </html>
