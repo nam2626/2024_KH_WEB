@@ -4,6 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>레이아웃 예제</title>
+  <style>
+    .header{
+      width: 1200px;
+      border:1px solid black;
+      margin : 0 auto;
+      height: 200px;
+    }
+    .nav{
+      width: 1200px;
+      border:1px solid black;
+      margin: 0 auto;
+    }
+    .nav > ul{
+      padding: 0px;
+      list-style-type: none;
+      text-align: center;
+    }
+    .nav > ul > li {
+      display: inline-block;
+      width: 200px;
+    }
+    .container{
+      width: 1200px;
+      border:1px solid black;
+      margin: 0 auto;
+      font-size: 0px;
+    }
+    .aside{
+      width: 200px;
+      height: 400px;
+      border:1px solid black;
+      display: inline-block;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .section{
+      width: 800px;
+      height: 400px;
+      border:1px solid black;
+      display: inline-block;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    .footer{
+      width: 1200px;
+      height: 200px;
+      margin: 0 auto;
+      border:1px solid black;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
@@ -18,7 +68,7 @@
       <li><a href="#">menu5</a></li>
     </ul>  
   </div>
-  <div class="conatiner">
+  <div class="container">
     <div class="aside">
       <h2>제목영역</h2>
     </div>
