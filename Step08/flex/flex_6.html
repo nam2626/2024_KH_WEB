@@ -5,7 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
     <style>
-       
+       .flex_row{
+            display: flex;
+            width: 400px;
+            height: 500px;
+            flex-flow: row wrap;
+            border:1px solid black;
+        }
+        .box{
+            padding:5px 45px;
+            margin: 5px;
+            background-color: darkblue;
+            color: white;
+        }
+        .align1{
+            align-content: flex-start;
+        }
+        .align2{
+            align-content: flex-end;
+        }
+        .align3{
+            align-content: center;
+        }
+        .align4{
+            align-content: space-around;
+        }
+        .align5{
+            align-content: space-between;
+        }
+        .align6{
+            align-content: space-evenly;
+        }
     </style>
 </head>
 <body>
