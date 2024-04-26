@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
     <style>
-        * {
+      * {
         margin: 0;
         padding: 0;
       }
@@ -15,14 +15,46 @@
         border:1px solid black;
       }
       .box{
-        width: 100px;
+        width: 300px;
         background-color: burlywood;
         padding: 10px 0px;
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
       }
-   
+      .flex_row_1{
+        display: flex;
+        flex-direction: row;
+        /* 줄바꿈 없이 전부 나열, 크기 조정 O */
+        flex-wrap: nowrap;
+        gap: 10px;
+        border: 1px solid red;
+      }
+      .flex_row_2{
+        display: flex;
+        flex-direction: row;
+        /* 배치할 공간이 모자르면 줄바꿈, 크기 조정 X */
+        flex-wrap: wrap;
+        gap: 10px;
+        border: 1px solid red;
+      }
+      
+      .flex_row_3{
+        display: flex;
+        flex-direction: row;
+        /* 배치할 공간이 모자르면 줄바꿈, 크기 조정 X, 순서가 역으로 바뀜 */
+        flex-wrap: wrap-reverse;
+        gap: 10px;
+        border: 1px solid red;
+      }
+      .flex_row_4{
+        display: flex;
+        /* direction과 wrap속성을 한번에 표기하는 방법 */
+        flex-flow: row wrap-reverse;
+        gap: 10px;
+        border: 1px solid red;
+      }
+
     </style>
 </head>
 <body>
