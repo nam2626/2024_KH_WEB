@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>텍스트 상자</title>
+  <style>
+    .txt_search_1{
+      background-image: url('img/search_icon.png');
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: 10px center;
+      font-size: 1.4em;
+      height: 50px;
+      padding-left: 70px;
+      outline: none;
+      border-radius: 10px;
+      border : 1px solid black;
+    }
+
+    .txt_search_2 > img, .txt_search_2 > input{
+      height: 45px;
+      float: left;
+    }
+    .txt_search_2 > input{
+      width: 200px;
+      margin-left: 5px;
+      font: 1.4em;
+      outline: none;
+      border:none;
+    }
+    .txt_search_2{
+      display: inline-block;
+      border-radius: 10px;
+      border : 1px solid black;
+      padding:5px;
+    }
+  </style>
+</head>
+<body>
+    <input type="text" class="txt_search_1">
+    <hr>
+    <div class="txt_search_2">
+      <img src="img/search_icon.png"><input type="text">
+    </div>
+</body>
+</html>
