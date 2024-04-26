@@ -6,11 +6,28 @@
     <title>flex</title>
     <style>
         .flex_container{
-            width: 800px;
+            width: 1200px;
             height: 500px;
             display: flex;
             flex-direction: row;
-            
+        }
+        .box{
+            padding:50px;
+            background-color: darkblue;
+            color: white;
+        }
+        /* align-self : 각 아이템별로 교차축 설정할때 */
+        .self1{
+            align-self: flex-start;
+        }
+        .self2{
+            align-self: flex-end;
+        }
+        .self3{
+            align-self: center;
+        }
+        .self4{
+            align-self: stretch;
         }
       
     </style>
