@@ -5,61 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>flex</title>
     <style>
-       *{
-        margin: 0;
-        padding: 0;
-       }
-       header{
-        background-color: #e9e9e9;
-        width: 1200px;
-        margin:0 auto;
-        text-align: center;
-        padding:20px 0px;
-       }
-       nav{
-        width: 1200px;
-        margin:0 auto;
-        background-color: green;
-       }
-       nav ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-evenly;
-        padding: 20px 0px;
-        list-style-type: none;
-       }
-       a{
-        text-decoration: none;
-        color: white;
-        font-size: 1.5em;
-       }
-       section{
-        width: 1200px;
-        margin:0 auto;
-       }
-       .article_flex{
-        display: flex;
-        flex-flow: row nowrap;
-       }
-       .item{
-        margin-left: 10px;
-       }
-       .item img{
-        width: 100%;
-       }
-       footer{
-        width: 1200px;
-        margin:0 auto;
-        background-color: #e9e9e9;
-        display: flex;
-        flex-flow: row nowrap;
-        padding:20px 0px;
-       }
-       footer ul{
-        list-style-type: none;
-        margin-left: 20px;
-       }
+        *{
+            margin: 0;
+            padding:0;
+        }
+        header{
+            width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+            padding:20px 0px;
+            background-color: #e9e9e9;
+        }
+        nav{
+            width: 1200px;
+            margin: 0 auto;
+            background-color: green;
+        }
+        nav > ul{
+            list-style-type: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+        }
+        nav > ul > li{
+            width: 200px;
+        }
+        nav a {
+            display: inline-block;
+            width: 100%;
+            padding:20px 0px;
+            text-align: center;
+            color: white;
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+        main{
+            width: 1200px;
+            margin:0 auto;
+        }
+        .item{
+            width: 240px;
+            display: flex;
+            flex-flow: column nowrap;
+            margin-left: 10px;
+        }
+        .item > img{
+            width: 100%;
+        }
+        .content_list_card{
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        footer{
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #e9e9e9;
+            padding: 20px 10px;
+        }
+        footer ul{
+            list-style-type: none;
+            height: 80px;
+            display: flex;
+            flex-flow: column wrap;
+            width: 50%;
+        }
+        footer ul li {
+            line-height: 16px;
+            padding:2px 0px;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
@@ -69,17 +83,17 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">메뉴1</a></li>
-            <li><a href="#">메뉴2</a></li>
-            <li><a href="#">메뉴3</a></li>
-            <li><a href="#">메뉴4</a></li>
-            <li><a href="#">메뉴5</a></li>
+            <li><a href="">메뉴1</a></li>
+            <li><a href="">메뉴2</a></li>
+            <li><a href="">메뉴3</a></li>
+            <li><a href="">메뉴4</a></li>
+            <li><a href="">메뉴5</a></li>
         </ul>
     </nav>
-    <section>
+    <main>
         <article>
             <h2>article 제목</h2>
-            <div class="article_flex">
+            <div class="content_list_card">
                 <div class="item">
                     <img src="/resource/img/cat.jpg" alt="썸네일 이미지">
                     <h3>썸네일 제목</h3>
@@ -105,12 +119,11 @@
                     <h3>썸네일 제목</h3>
                     <p>썸네일 내용</p>
                 </div>
-
             </div>
         </article>
         <article>
             <h2>article 제목</h2>
-            <div class="article_flex">
+            <div class="content_list_card">
                 <div class="item">
                     <img src="/resource/img/cat.jpg" alt="썸네일 이미지">
                     <h3>썸네일 제목</h3>
@@ -136,27 +149,18 @@
                     <h3>썸네일 제목</h3>
                     <p>썸네일 내용</p>
                 </div>
-
             </div>
         </article>
-        
-     
-    </section>
+    </main>
     <footer>
-        <div class="company">
-            <ul>
-                <li>회사명 : OOOO</li>
-                <li>대표 : OOO</li>
-                <li>사업자번호 : OOO-OOOO-OOOOO</li>
-                <li>통신판매업신고번호 : OOO-OOOO-OOOOO</li>
-            </ul>
-        </div>
-        <div class="call">
-            <ul>
-                <li>고객 센터 연락처 : OO-OOOO-OOOO</li>
-                <li>담당자 이메일 : test@gmail.com</li>
-            </ul>
-        </div>
+        <ul>
+            <li>회사명:OOO</li>
+            <li>대표 : OOO</li>
+            <li>사업자번호 : OOO-OOOO-OOOOO</li>
+            <li>통신판매업신고번호 : OOO-OOOO-OOOOO</li>
+            <li>고객 센터 연락처 : OO-OOOO-OOOO</li>
+            <li>담당자 이메일 : test@gmail.com</li>
+        </ul>
     </footer>
 </body>
 
