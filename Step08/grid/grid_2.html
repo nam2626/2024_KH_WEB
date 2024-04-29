@@ -5,7 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-       
+        body{
+            height: 5000px;
+        }
+        .item{
+            padding:50px;
+            border:1px solid black;
+            font-size: 1.5em;
+        }
+       .container{
+            display: grid;
+            height: 800px;
+            border: 1px solid red;
+            /* 한줄당 3칸 최소 200px */
+            grid-template-columns: repeat(3, minmax(200px,1fr));
+            /*  auto-fit, auto-fill을 사용하기위해서는
+                반드시 세로나 가로 길이가 지정이 되야됨
+            */
+            grid-template-rows: repeat(auto-fit,minmax(200px, auto));
+            row-gap: 10px;
+            column-gap: 10px;
+            /* gap: 10px 10px; */
+            /* grid-gap: 10px 10px; */
+       }
     </style>
 </head>
 <body>
