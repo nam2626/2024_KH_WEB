@@ -18,6 +18,50 @@
             font-size: 2em;
             text-align: center;
         }
+        .cell1{
+            grid-row: 1;
+            /* 컬럼 지정 방법 */
+            /* 시작 컬럼번호 / 마지막컬럼번호 + 1 */
+            grid-column: 3 / 6;
+        }
+        .cell2{
+            grid-row: 1;
+            /* 시작 컬럼번호 / span 칸 개수 */
+            grid-column: 1 / span 2;
+        }
+        .cell3{
+            /* 2번 행, 5칸짜리 */
+            grid-row: 2;
+            grid-column: 1 / span 5;
+        }
+        .cell4{
+            grid-column: 1;
+            grid-row: 3 / span 5;
+        }
+        .cell5{
+            grid-column: 2 / span 3;
+            grid-row: 4;
+        }
+        .cell6{
+            grid-column: 2 / span 4;
+            grid-row : 3
+        }
+        .cell7{
+            grid-column: 2 / span 4;
+            grid-row: 5;
+        }
+        .cell8{
+            grid-column: 2 / span 4;
+            grid-row: 6;
+        }
+        .cell9{
+            grid-column: 2 / span 4;
+            grid-row: 7;
+        }
+        .cell10{
+            grid-column: 2 / span 4;
+            grid-row: 8;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +74,8 @@
         <div class="item cell5">5</div>
         <div class="item cell7">7</div>
         <div class="item cell8">8</div>
-        <div class="item cell9">8</div>
+        <div class="item cell9">9</div>
+        <div class="item cell10">10</div>
     </div>
 </body>
 </html>

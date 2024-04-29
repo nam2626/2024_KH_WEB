@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid 정렬 예제</title>
+  <style>
+    .container {
+      width: 1200px;
+      display: grid;
+      border: 1px solid black;
+      gap: 10px;
+      height: 800px;
+      grid-template-columns: repeat(3, 200px);
+      /* 그리드 컨테이너 가로 정렬 */
+      justify-content: center;
+      /* 그리드 컨테이너 세로 정렬 */
+      align-content: center;
+      
+      justify-items: center;
+    }
+
+  .item {
+    background-color: #ccc;
+    padding: 20px;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    
+  }
+
+  .item1 {
+    background-color: #f44336;
+  }
+
+  .item3 {
+    background-color: #e91e63;
+  }
+
+  .item5 {
+    background-color: #9c27b0;
+  }
+
+  .item7 {
+    background-color: #673ab7;
+  }
+
+  .item9 {
+    background-color: #3f51b5;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div>
+  </div>
+</body>
+</html>
