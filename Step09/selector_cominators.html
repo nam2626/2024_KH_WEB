@@ -115,6 +115,25 @@
         #chk:checked+label{
             background-color: chocolate;
         }
+        /* 첫번째 자식 요소만 선택 */
+        .container1 > p:first-child{
+            color:crimson;
+        }
+        /* 마지막 자식 요소만 선택 */
+        .container1 > p:last-child{
+            color:blueviolet;
+        }
+        /* 원하는 n번째 자식 요소만 선택 */
+        .container1 > p:nth-child(3){
+            text-decoration: line-through dashed;
+        }
+        /* 홀수/짝수 번째 자식 요소 선택 */
+        .container1 > p:nth-child(2n){
+            background-color: gold;
+        }
+        .container1 > p:nth-child(2n+1){
+            background-color: greenyellow;
+        }
     </style>
 </head>
 <body>
