@@ -13,14 +13,24 @@
       border-radius: 8px;
       box-sizing: border-box;
       padding:2px;
+    }  
+    input{
+      display: none;
     }
-    .paint{
+    input:checked+.radio{
       background-color: orange;
       background-clip: content-box;
     }
   </style>
 </head>
 <body>
-  <span class="radio paint"></span>
+  <input type="radio" id="chk1" name="items">
+  <span class="radio"></span>
+  <label for="chk1">항목1</label>
+  
+  <input type="radio" id="chk2" name="items">
+  <span class="radio"></span>
+  <label for="chk2">항목2</label>
+  
 </body>
 </html>
