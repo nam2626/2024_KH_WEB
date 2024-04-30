@@ -17,7 +17,7 @@
     input{
       display: none;
     }
-    input:checked+.radio{
+    input:checked+label > .radio{
       background-color: orange;
       background-clip: content-box;
     }
@@ -25,12 +25,10 @@
 </head>
 <body>
   <input type="radio" id="chk1" name="items">
-  <span class="radio"></span>
-  <label for="chk1">항목1</label>
+  <label for="chk1"><span class="radio"></span>항목1</label>
   
   <input type="radio" id="chk2" name="items">
-  <span class="radio"></span>
-  <label for="chk2">항목2</label>
+  <label for="chk2"><span class="radio"></span>항목2</label>
   
 </body>
 </html>
