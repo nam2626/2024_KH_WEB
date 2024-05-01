@@ -43,41 +43,37 @@
             position: relative;
             font-size: 0px;
         }
-        .left_arrow {
-            display: flex;
+        .arrow{
             position: absolute;
             top: calc(50% - 24px);
             background-image: url(img/icon.png);
             width: 48px;
             height: 48px;
             border: none;
-            flex-flow: row nowrap;
             position: absolute;
             /* opacity : 해당 태그 투명도 */
             /* opacity: 0.5; */
             /* rgba -> 색상에대한 투명도 */
             background-color: rgba(255, 255, 255, 0.5);
         }
+        .left_arrow {
+            left: 0px;
+        }
 
         .right_arrow {              
-            position: absolute;
             right: 0px;
-            top: calc(50% - 24px);
-            background-image: url(img/icon.png);
-            background-position: 96px;
-            width: 48px;
-            height: 48px;
-            border: none;
-            background-color: rgba(255, 255, 255, 0.502);
+            transform: rotateZ(180deg);
         }
 
         .left_arrow:hover{
             background-color: rgba(255, 255, 255, 1);
         }
+
         .right_arrow:hover{
             /* x좌표 y좌표 번짐정도 그림자크기 그림자색상 내/외부그림자설정 */
             box-shadow: 0px 0px 5px 5px yellow inset;
         }
+        
         nav{
             background-color: #e9e9e9;
         }
@@ -145,8 +141,8 @@
             </div>
             <div class="ad_img">
                 <img src="img/main_4.jpg" alt="">
-                <button class="left_arrow" type="button"></button>
-                <button class="right_arrow" type="button"></button>
+                <button class="arrow left_arrow" type="button"></button>
+                <button class="arrow right_arrow" type="button"></button>
             </div>    
         </header>
         <nav>
