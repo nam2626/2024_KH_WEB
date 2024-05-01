@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내 정보</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+    .container{
+      max-width: 550px;
+      margin:0 auto;
+      /* border: 1px solid black; */
+      padding:0px 15px 0px;
+      display: flex;
+      flex-flow: column nowrap;
+      box-sizing: border-box;
+    }
+    .title > h1{
+      font-size: 20px;
+      line-height: 20px;
+      color: white;
+      padding:15px ;
+      padding-left: 20px;
+    }
+    .title{
+      background-color: #A82E2E;
+      margin-bottom: 30px;
+    }
+    article{
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    .img_profile{
+      width: 50%;
+    }
+    .info_list{
+      list-style-type: none;
+      font-weight: bold;
+    }
+    .info_list > li {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+    nav{
+      width: 100%;
+      max-width: 550px;
+      margin:0 auto;
+      position: fixed;
+      bottom: 0px;
+    }
+    nav > ul{
+      list-style-type: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav a:link, nav a:visited{
+      display: flex;
+      width: 80px;
+      text-align: center;
+      color:black;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    nav a img{
+      height: 55px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="title">
+      <h1>내 학적 정보</h1>
+    </header>
+    <main>
+      <article>
+        <img src="./img/profile.png" alt="프로필 사진" class="img_profile">
+        <ul class="info_list">
+          <li>2020113345</li>
+          <li>컴퓨터 공학과</li>
+          <li>홍길동</li>
+          <li>평점 : 3.56</li>
+        </ul>
+      </article>
+    </main>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="./my_info.html">
+          <img src="./img/my_info.png">
+          <span>내 정보</span>
+        </a>
+      </li>
+      <li>
+        <a href="./notice.html">
+          <img src="./img/clip_board.png">
+          <span>공지사항</span>
+        </a>
+      </li>
+      <li>
+        <a href="./time_table.html">
+          <img src="./img/table.png">
+          <span>시간표</span>
+        </a>
+      </li>
+      <li>
+        <a href="./index.html">
+          <img src="./img/logout.png">
+          <span>로그아웃</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
