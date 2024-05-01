@@ -50,9 +50,12 @@
             width: 48px;
             height: 48px;
             border: none;
-            opacity: 60%;
             flex-flow: row nowrap;
             position: absolute;
+            /* opacity : 해당 태그 투명도 */
+            /* opacity: 0.5; */
+            /* rgba -> 색상에대한 투명도 */
+            background-color: rgba(255, 255, 255, 0.5);
         }
 
         .right_arrow {              
@@ -64,9 +67,16 @@
             width: 48px;
             height: 48px;
             border: none;
-            opacity: 60%;
+            background-color: rgba(255, 255, 255, 0.502);
         }
 
+        .left_arrow:hover{
+            background-color: rgba(255, 255, 255, 1);
+        }
+        .right_arrow:hover{
+            /* x좌표 y좌표 번짐정도 그림자크기 그림자색상 내/외부그림자설정 */
+            box-shadow: 0px 0px 5px 5px yellow inset;
+        }
     </style>
 </head>
 <body>
