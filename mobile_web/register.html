@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>학적관리페이지</title>
+  <title>학사 등록 페이지</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
     *{
@@ -15,25 +15,23 @@
       max-width: 550px;
       margin:0 auto;
       /* border: 1px solid black; */
-      padding:50px 15px 0px;
+      padding:0px 15px 0px;
       display: flex;
       flex-flow: column nowrap;
       box-sizing: border-box;
-      
     }
-
-    header{
-      text-align: center;
+    .title > h1{
+      font-size: 20px;
+      line-height: 20px;
+      color: white;
+      padding:15px ;
+      padding-left: 20px;
     }
-    header img{
-      width: 100%;
+    .title{
+      background-color: #A82E2E;
+      margin-bottom: 30px;
     }
-    header h1{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      font-size: 36px;
-    }
-
+    
     input{
       width: 100%;
       border:1px solid black;
@@ -59,21 +57,39 @@
       border-radius: 10px;
       margin-bottom: 20px;
     }
-
+    .std_no_form{
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+    }
+    .txt_std_no{
+      width: calc(100% - 64px);
+      height: 57px;
+      margin-right: 10px;
+    }
+    .btn_std_no{
+      width: 57px;
+      height: 57px;
+      font-size: 16px;
+      padding:0px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <img src="./img/main_logo.png" alt="학교 로고 이미지">
-      <h1>OO 대학 학사관리 앱</h1>
+    <header class="title">
+      <h1>학사 등록 페이지</h1>
     </header>
     <main>
       <article>
-        <input type="text" placeholder="학번을 입력하세요">
-        <input type="text" placeholder="암호를 입력하세요">
-        <a href="" class="btn">로그인</a>
-        <a href="./register.html" class="btn">학사등록</a>
+        <div class="std_no_form">
+          <input type="text" placeholder="학번을 입력하세요" class="txt_std_no">
+          <button class="btn btn_std_no">학번<br>조회</button>
+        </div>
+        <input type="password" placeholder="암호를 입력하세요">
+        <input type="password" placeholder="암호를 한번 더 입력하세요">
+        <a href="" class="btn">학사 등록</a>
+        <a href="./index.html" class="btn">로그인 페이지로 이동</a>
       </article>
     </main>
   </div>
