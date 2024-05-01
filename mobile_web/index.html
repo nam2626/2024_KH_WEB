@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>학적관리페이지</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+    .container{
+      max-width: 550px;
+      margin:0 auto;
+      /* border: 1px solid black; */
+      padding:50px 15px 0px;
+      display: flex;
+      flex-flow: column nowrap;
+      box-sizing: border-box;
+      
+    }
+
+    header{
+      text-align: center;
+    }
+    header img{
+      width: 100%;
+    }
+    header h1{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    input{
+      width: 100%;
+      border:1px solid black;
+      height: 57px;
+      padding-left: 20px;
+      font: 1.5em;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .btn{
+      width: 100%;
+      padding:15px 0px;
+      text-align: center;
+      display: inline-block;
+      font-size: 1.5em;
+      color:white;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #209AF2;
+      border:1px solid #3300FF;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="./img/main_logo.png" alt="학교 로고 이미지">
+      <h1>OO 대학 학사관리 앱</h1>
+    </header>
+    <main>
+      <article>
+        <input type="text" placeholder="학번을 입력하세요">
+        <input type="text" placeholder="암호를 입력하세요">
+        <a href="" class="btn">로그인</a>
+        <a href="" class="btn">학사등록</a>
+      </article>
+    </main>
+  </div>
+</body>
+</html>
