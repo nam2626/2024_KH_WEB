@@ -10,7 +10,6 @@
       padding:0;
       font-family: "Nanum Gothic", sans-serif;
     }
-   
     .container{
       max-width: 550px;
       /* 
@@ -23,6 +22,7 @@
       display: flex;
       flex-flow: column nowrap;
       box-sizing: border-box;
+      position: relative;
     }
     .title > h1{
       font-size: 20px;
@@ -36,10 +36,14 @@
     }
     main{
       padding-top: 20px;
-      height: calc(100vh - 50px - 90px) ;
+      height: calc(70% - 10px) ;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+    article{
+      height: 100%;
       overflow: scroll;
       scrollbar-width: thin;
-      box-sizing: border-box;
     }
     .content{
       padding:10px;
@@ -55,8 +59,7 @@
     nav{
       width: 100%;
       max-width: 550px;
-      position: fixed;
-      bottom: 0px;
+      margin-top: 10px;
     }
     nav > ul{
       list-style-type: none;
@@ -146,34 +149,35 @@
         </div>
       </article>
     </main>
+    <nav>
+      <ul>
+        <li>
+          <a href="./my_info.html">
+            <img src="./img/my_info.png">
+            <span>내 정보</span>
+          </a>
+        </li>
+        <li>
+          <a href="./notice.html">
+            <img src="./img/clip_board.png">
+            <span>공지사항</span>
+          </a>
+        </li>
+        <li>
+          <a href="./time_table.html">
+            <img src="./img/table.png">
+            <span>시간표</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html">
+            <img src="./img/logout.png">
+            <span>로그아웃</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <nav>
-    <ul>
-      <li>
-        <a href="./my_info.html">
-          <img src="./img/my_info.png">
-          <span>내 정보</span>
-        </a>
-      </li>
-      <li>
-        <a href="./notice.html">
-          <img src="./img/clip_board.png">
-          <span>공지사항</span>
-        </a>
-      </li>
-      <li>
-        <a href="./time_table.html">
-          <img src="./img/table.png">
-          <span>시간표</span>
-        </a>
-      </li>
-      <li>
-        <a href="./index.html">
-          <img src="./img/logout.png">
-          <span>로그아웃</span>
-        </a>
-      </li>
-    </ul>
-  </nav>
+  
 </body>
 </html>
