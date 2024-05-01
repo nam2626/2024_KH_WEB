@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .flex_container{
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+            margin:0 auto;
+        }
+        header{
+             background-color: #e9e9e9;
+             display: flex;
+             flex-direction: row;
+             flex-flow: wrap;
+             justify-content: flex-end;
+
+        }
+        .member_bar{
+            display: flex;
+            flex-direction: row;
+            padding:5px 10px;
+        }
+        .profile_info{
+            line-height: 24px;
+        }
+        .profile{
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            background-image: url('img/icon.png');
+            background-repeat: no-repeat;
+            background-position: -96px;
+        }
+        .ad_img{
+            position: relative;
+        }
+        .left_arrow {
+            display: flex;
+            position: absolute;
+            top: calc(50% - 24px);
+            background-image: url(img/icon.png);
+            width: 48px;
+            height: 48px;
+            border: none;
+            opacity: 60%;
+            flex-flow: row nowrap;
+            position: absolute;
+        }
+
+        .right_arrow {              
+            position: absolute;
+            right: 0px;
+            top: calc(50% - 24px);
+            background-image: url(img/icon.png);
+            background-position: 96px;
+            width: 48px;
+            height: 48px;
+            border: none;
+            opacity: 60%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex_container">
+        <header>
+            <div class="member_bar">
+                <div><a href="" class="profile"></a></div>
+                <div class="profile_info">
+                    OOO님이 로그인 하셨습니다.<br>
+                    로그아웃 | 정보수정
+                </div>
+            </div>
+            <div class="ad_img">
+                <img src="img/main_4.jpg" alt="">
+                <button class="left_arrow" type="button"></button>
+                <button class="right_arrow" type="button"></button>
+            </div>    
+        </header>
+        <nav>
+            <ul>
+                <li><a href="main.html">HOME</a></li>
+                <li><a href="">예약</a></li>
+                <li><a href="">펜션 스토리</a></li>
+                <li><a href="">펜션 소개</a></li>
+                <li><a href="sub_page.html">오시는 길</a></li>
+            </ul>
+        </nav>
+        <section>
+            <article>
+                <h2>공지사항</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>글번호</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>제목1</td>
+                            <td>2021-07-26</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>제목2</td>
+                            <td>2021-07-25</td>
+                            <td>543</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>제목3</td>
+                            <td>2021-07-23</td>
+                            <td>331</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>제목4</td>
+                            <td>2021-07-22</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>제목5</td>
+                            <td>2021-07-21</td>
+                            <td>13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h2>이벤트</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>글번호</th>
+                            <th>제목</th>
+                            <th>작성일</th>
+                            <th>조회수</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>제목1</td>
+                            <td>2021-07-26</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>제목2</td>
+                            <td>2021-07-25</td>
+                            <td>543</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>제목3</td>
+                            <td>2021-07-23</td>
+                            <td>331</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>제목4</td>
+                            <td>2021-07-22</td>
+                            <td>33</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>제목5</td>
+                            <td>2021-07-21</td>
+                            <td>13</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
+        <footer>
+            <ul>
+                <li>OOOO 펜션</li>
+                <li>대표자 : OOOO</li>
+                <li>연락처 : <a href="tel:010-0000-0000">010-0000-0000</a></li>
+                <li>주소 : 강원도 평창시 OOOOOOOOO</li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
