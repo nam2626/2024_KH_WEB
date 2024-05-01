@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>공지사항</title>
+  <style>@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    *{
+      margin:0;
+      padding:0;
+      font-family: "Nanum Gothic", sans-serif;
+    }
+   
+    .container{
+      max-width: 550px;
+      /* 
+        뷰포트 높이 단위.
+        1vh가 1%
+      */
+      height: 100vh;
+      margin:0 auto;
+      padding:0px 15px 0px;
+      display: flex;
+      flex-flow: column nowrap;
+      box-sizing: border-box;
+    }
+    .title > h1{
+      font-size: 20px;
+      line-height: 20px;
+      color: white;
+      padding:15px ;
+      padding-left: 20px;
+    }
+    .title{
+      background-color: #A82E2E;
+    }
+    main{
+      padding-top: 20px;
+      height: calc(100vh - 50px - 90px) ;
+      overflow: scroll;
+      scrollbar-width: thin;
+      box-sizing: border-box;
+    }
+    .content{
+      padding:10px;
+      margin-bottom: 5px;
+    }
+    .content:nth-child(2n+1){
+      background-color: #FED2D2;
+    }
+    .content_text{
+      margin-top: 10px;
+      text-align: right;
+    }
+    nav{
+      width: 100%;
+      max-width: 550px;
+      position: fixed;
+      bottom: 0px;
+    }
+    nav > ul{
+      list-style-type: none;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    nav a:link, nav a:visited{
+      display: flex;
+      width: 80px;
+      text-align: center;
+      color:black;
+      font-size: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+    nav a img{
+      height: 55px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="title">
+      <h1>내 학적 정보</h1>
+    </header>
+    <main>
+      <article>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">금일 코로나 관련 공지사항입니다.</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+        <div class="content">
+          <h3 class="content_title">공지사항 제목 영역</h3>
+          <p class="content_text">학과 사무처 1시간전</p>
+        </div>
+      </article>
+    </main>
+  </div>
+  <nav>
+    <ul>
+      <li>
+        <a href="./my_info.html">
+          <img src="./img/my_info.png">
+          <span>내 정보</span>
+        </a>
+      </li>
+      <li>
+        <a href="./notice.html">
+          <img src="./img/clip_board.png">
+          <span>공지사항</span>
+        </a>
+      </li>
+      <li>
+        <a href="./time_table.html">
+          <img src="./img/table.png">
+          <span>시간표</span>
+        </a>
+      </li>
+      <li>
+        <a href="./index.html">
+          <img src="./img/logout.png">
+          <span>로그아웃</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>
