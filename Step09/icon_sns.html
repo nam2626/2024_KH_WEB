@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아이콘 버튼</title>
+  <style>
+    .sns_bar{
+      list-style-type: none;
+      display: flex;
+      flex-flow: row nowrap;
+      gap:20px;
+    }
+    .sns_bar a:link, .sns_bar a:visited{
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background-image: url('img/sns_icon_pack.png');
+      background-repeat: no-repeat;
+    }
+    .google{
+      background-position-y: -48px;
+    }
+    .youtube{
+      background-position-y: -96px;
+    }
+    .kakao{
+      background-position-y: -144px;
+    }
+    .twitter{
+      background-position-y: -192px;
+    }
+    .instagram{
+      background-position-y: -240px;
+    }
+  </style>
+</head>
+<body>
+  <ul class="sns_bar">
+    <li><a href="" class="kakao"></a></li>
+    <li><a href="" class="google"></a></li>
+    <li><a href="" class="youtube"></a></li>
+    <li><a href="" class="twitter"></a></li>
+    <li><a href="" class="facebook"></a></li>
+    <li><a href="" class="instagram"></a></li>
+  </ul>
+</body>
+</html>
