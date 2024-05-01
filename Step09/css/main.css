@@ -1,0 +1,16 @@
+*{
+  margin:0;
+  padding:0;
+}
+.container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.item{
+  width: 25%;
+  height: 100px;
+  background-color: cornflowerblue;
+  border: 1px solid black;
+  box-sizing: border-box;
+}

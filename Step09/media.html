@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미디어 쿼리</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            /* min-width: 1200px; */
+            width: 100%;
+            height: 600px;
+            background-color: red;
+        }
+
+        @media screen and (max-width: 1200px) {
+            .container{
+                background-color: blue;
+            }
+        }
+
+        @media screen and (max-width: 760px) {
+            .container{
+                background-color: green;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            .container{
+                background-color: coral;
+            }
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
