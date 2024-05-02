@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시간표</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <style>
+    article{
+      height: 100%;
+      overflow-y: scroll; 
+      scrollbar-width: thin;
+    }
+  .weekday > li {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: bold;
+   }
+   .weekday_details {
+    list-style-type: none;
+    font-size: 0.8em;
+    font-weight: normal;
+    padding-left: 40px;
+   }
+   .weekday_details > li{
+      margin-top: 10px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="title">
+      <h1>시간표</h1>
+    </header>
+    <main>
+      <article>
+        <ul class="weekday">
+          <li>월요일
+            <ul class="weekday_details">
+              <li>수업 없음</li>
+            </ul>
+          </li>
+          <li>화요일
+            <ul class="weekday_details">
+              <li>09:00 ~ 11:00 C프로그래밍</li>
+              <li>14:00 ~ 17:00 객체지향 프로그래밍</li>
+            </ul>
+          </li>
+          <li>수요일
+            <ul class="weekday_details">
+              <li>수업 없음</li>
+            </ul>
+          </li>
+          <li>목요일
+            <ul class="weekday_details">
+              <li>수업 없음</li>
+            </ul>
+          </li>
+          <li>금요일
+            <ul class="weekday_details">
+              <li>09:00 ~ 11:00 C프로그래밍</li>
+              <li>14:00 ~ 17:00 객체지향 프로그래밍</li>
+            </ul>
+          </li>
+        </ul>
+      </article>
+    
+    </main>
+    <nav>
+      <ul>
+        <li>
+          <a href="./my_info.html">
+            <img src="./img/my_info.png">
+            <span>내 정보</span>
+          </a>
+        </li>
+        <li>
+          <a href="./notice.html">
+            <img src="./img/clip_board.png">
+            <span>공지사항</span>
+          </a>
+        </li>
+        <li>
+          <a href="./time_table.html">
+            <img src="./img/table.png">
+            <span>시간표</span>
+          </a>
+        </li>
+        <li>
+          <a href="./index.html">
+            <img src="./img/logout.png">
+            <span>로그아웃</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</body>
+</html>
